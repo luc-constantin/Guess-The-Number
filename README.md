@@ -8,3 +8,5 @@
   <li> If you lose, click new Game to start again</li>
  </ul> <hr>
  <h6> Good Luck</h6>
+ 
+ <p>created with ♡ by Luc <p>
