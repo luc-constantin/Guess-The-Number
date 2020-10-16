@@ -7,6 +7,6 @@
   <li> Pay attention to the cursor under Current Range which indicates how close you are to guess the number</li>
   <li> If you lose, click new Game to start again</li>
  </ul> <hr>
- <h6> Good Luck</h6>
+ <p> Good Luck</p>
  
- <p>created with ♡ by Luc <p>
+ <h6>created with ♡ by Luc <h6>
