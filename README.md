@@ -1,4 +1,4 @@
-# Game Guess the Number 
+# Guess the Number 
 <h3>Guess the Number </h3>
 <p> Simple game guessing the number </p>
 <h4> Rules for playing the game: <br>
