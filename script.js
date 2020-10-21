@@ -4,13 +4,13 @@ let attempts = 0;
 let maxGuesses;
 
 let low = 1;
-let high = 100;
+let high = 50;
 
 function rangeUpdate() {
   const rangeOutput = document.getElementById("rangeOutput");
   rangeOutput.innerText = `${low} - ${high}`
   rangeOutput.style.marginLeft = low + '%';
-  rangeOutput.style.marginRight = 100 - high + '%';
+  rangeOutput.style.marginRight = 50 - high + '%';
   rangeOutput.classList.add("flash");
 
 
@@ -26,7 +26,7 @@ function rangeUpdate() {
 
 
   const highValue = document.getElementById("high");
-  highValue.style.flex = 100 - high + '%';
+  highValue.style.flex = 50 - high + '%';
   highValue.style.background = "#ffb35c ";
   highValue.style.borderRadius = "4px";
 
@@ -42,7 +42,7 @@ function newGame() {
 }
 
 function init() {
-    computerGuess = Math.floor(Math.random() * 100 + 1);
+    computerGuess = Math.floor(Math.random() * 50 + 1);
     console.log(computerGuess); 
     document.getElementById("newGameButton").style.display = "none";
     document.getElementById("gameArea").style.display = "none";
