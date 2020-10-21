@@ -1,6 +1,8 @@
 :root {
     --blue:#62bcf0;
-    --red: #ffb35c;
+    --red: #ffb35c ;
+    --hot: #ec5555;
+    --sky:#61d8e7;
     --background: #f5e9db;
     --gradient-1: #80b1ce;
     --gradient-2: #2f4774;
@@ -48,7 +50,7 @@ button {
     cursor: pointer;
     background: var(--blue);
     padding: 2rem;
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 0rem 0rem 1rem 1rem;
 }
 #newGameButton {
     border-radius: 10px;
@@ -58,10 +60,14 @@ button {
     background: #ffb35c;
     color: var(--background);
 }
+button:first-child {
+    background: var(--sky);
+    border-radius: 1rem 1rem 0rem 0rem;
+}
 
 button:last-child {
-    background: var(--red);
-    border-radius: 0 0 1rem 1rem;
+    background: var(--hot);
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 h3 {
