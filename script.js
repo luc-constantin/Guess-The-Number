@@ -60,10 +60,13 @@ function easyMode() {
 }
 
 function hardMode() {
-    maxGuesses = 5;
+    maxGuesses = 7;
     startGame();
 }
-
+function proMode() {
+  maxGuesses = 5;
+  startGame();
+}
 function compareGuess() {
   const userGuess =  Number(document.getElementById("inputBox").value);
   userGuesses.push(" " + userGuess);
