@@ -105,3 +105,4 @@ function compareGuess() {
     }
     rangeUpdate();
 }
+// created by Luc -accolades.dev-
