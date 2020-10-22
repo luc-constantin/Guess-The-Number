@@ -50,7 +50,7 @@ button {
     cursor: pointer;
     background: var(--blue);
     padding: 2rem;
-    border-radius: 0rem 0rem 1rem 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 #newGameButton {
     border-radius: 10px;
@@ -62,7 +62,7 @@ button {
 }
 button:first-child {
     background: var(--sky);
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 button:last-child {
