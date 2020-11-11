@@ -63,6 +63,7 @@ function hardMode() {
     maxGuesses = 7;
     startGame();
 }
+
 function proMode() {
   maxGuesses = 5;
   startGame();
