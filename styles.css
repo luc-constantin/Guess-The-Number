@@ -1,0 +1,137 @@
+:root {
+    --blue:#62bcf0;
+    --red: #ffb35c ;
+    --hot: #ffb35c;
+    --sky:#61d8e7;
+    --background: #f5e9db;
+    --gradient-1: #80b1ce;
+    --gradient-2: #2f4774;
+}
+
+
+html {
+    font-size: 8px;
+    font-weight: 350;
+}
+
+body {
+    width: 90vw;
+    margin: 0 auto;
+    background: radial-gradient(var(--gradient-1), var(--gradient-2));
+}
+main {
+    text-align: center;
+    background: var(--background);
+    border: solid var(--red);
+    border-width: 5px 5px 5px 5px;
+    min-height: 75vh;
+    border-radius: 10px 10px 10px 10px;
+    padding: 2rem;
+}
+
+
+h2 {
+    font-size: 2.3rem;
+    margin: 9rem 0;
+}
+
+P {
+    font-size: 2rem;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: var(--blue);
+    padding: 2rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+#newGameButton {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#newGameButton:hover {
+    background: #ffb35c;
+    color: var(--background);
+}
+button:first-child {
+    background: var(--sky);
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+button:last-child {
+    background: var(--hot);
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+input {
+    border: 2px solid lightgrey;
+    background: transparent;
+    margin: 2rem;
+    padding: 1rem 0;
+    width: 16rem;
+    border-radius: 10px; 
+    text-align: center;
+}
+
+#range {
+    display: flex;
+    background: var(--blue);
+    height: 45px;
+    padding: 0;
+    margin: 0 0 4rem 0;
+    border-radius: 1rem;
+}
+
+#rangeOutput {
+    font-size: 1.6rem;
+}
+
+.stats {
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info span {
+    font-size: 1.6rem;
+}
+
+.flash {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        width: 50%;
+    }
+}
+
+
+/* created by Luc -accolades.dev- */

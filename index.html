@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Version 1.0.1-->
+    <title>Can you Guess the Number?</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body onload="init()">
+    <main>
+        <div id="welcomeScreen">
+            <h2>Can you Guess the Number?<br>Between 1-100</h2>
+            <br>
+            <p> Rules 
+                
+                    <ol>Guess the number by adding the closest number 
+                        to the one created by computer 
+                        (in this case Browser)
+                    </ol>
+                    <ol>
+                        Pay attention to the cursor under Current Range
+                        which indicates how close you are to guess the number  
+                    </ol>
+                    <ol>
+                        If you lose, click new Game to start again 
+                    </ol>
+                
+            </p>
+            <section>
+                <p>Select the Level</p>
+                <div class="button-wrapper">
+                    
+                    <button onclick="easyMode()">Easy: 10 attempts</button>
+                    <button onclick="hardMode()">Hard: 7 attempts</button>
+                    <button onclick="proMode()">Pro: 5 attempts</button>
+                </div>
+            </section>
+        </div>
+        <div id="gameArea">
+            <button id="newGameButton" onclick="newGame()">New Game</button>
+            <section>
+                <h3 id="textOutput">Your Guess</h3>
+                <input type="number" 
+                id="inputBox" 
+                min="1" 
+                max="100" 
+                onchange="compareGuess()" 
+                />
+            </section>
+            <section>
+                <p>Current Range:</p>
+                <span id="rangeOutput">1 - 100</span>
+                <div id="range">
+                    <span id="low"></span>
+                    <span id="space"></span>
+                    <span id="high"></span>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of Previous Guesses </p>
+                    <span id="attempts">0</span>      
+                </div>
+                <div class="info">
+                    <p>Previous Guesses</p>
+                    <span id="guesses">-</span>      
+                </div>
+            </section>
+    </main>
+    <div class="floating-text">
+        a Pen by <a href="https://twitter.com/accolades_dev " target="_blank">Luc</a>
+    </div>
+<div>
+    <script src="script.js"></script>
+</body>
+</html>
