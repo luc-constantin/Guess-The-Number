@@ -8,5 +8,6 @@
   <li> If you lose, click new Game to start again</li>
  </ul> <hr>
  <p> Good Luck</p>
+### Play the game [HERE](https://luc-constantin.github.io/Guess-The-Number)
  
  <h6>created with ♡ by Luc <h6>
